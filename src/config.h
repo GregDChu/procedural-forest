@@ -1,0 +1,33 @@
+#pragma once
+
+#ifndef H_CONFIG
+#define H_CONFIG
+
+#define FOG_DEPTH 15.0
+
+#define SHADER_RESOURCE_PATH "../resources/"
+#define WATER_HOLE_RADIUS 3.0
+#define WATER_HOLE_DEPTH 1.0
+#define WATER_HOLE_SPREAD_RADIUS ((3 * FOG_DEPTH) + (2 * WATER_HOLE_RADIUS))
+#define NEW_WATER_HOLE_RADIUS (WATER_HOLE_RADIUS + FOG_DEPTH)
+#define WATER_POS_VARIATION 2.0
+
+#define MIN_PICKUP_DISTANCE 3.0
+
+#define TREE_GRID_SPACING 8.0
+#define BUSH_GRID_SPACING 6.0
+#define GRASS_GRID_DENSITY 2.0
+#define ROCK_GRID_SPACING 15.0
+#define MUSH_GRID_SPACING 20.0
+
+#define MUSHROOM_COUNT 10
+#define NO_SOUND_ZONE 12.0
+
+#define MAP_RANGE 35.0
+
+enum Axis { X_AXIS = 0x100, Y_AXIS = 0x010, Z_AXIS = 0x001 };
+enum AssetType { NONE, TREE, BUSH, MUSHROOM, GRASS, ROCK, MARKER, GLOW, ARROW, SUN};
+enum SurfaceType { GROUND, WATER, BILLBOARD };
+
+
+#endif
